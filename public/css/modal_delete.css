@@ -1,0 +1,52 @@
+#dialog {
+    display: none;
+    position: fixed;
+    top: 10vh;
+    left: 10vw;
+    width: 8vw;
+    height: 8vw;
+    border: 1px solid #eee;
+    border-radius: 4px;
+    padding: 10px;
+    text-align: center;
+    z-index: 1;
+    background-color: #444;
+    color: #fff;
+}
+
+#dialog.show {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+#dialog span {
+    margin-bottom: 1em;
+}
+
+#show,
+#close {
+    background: #da1b60;
+    border: none;
+    color: #fff;
+    display: block;
+    font-size: 1em;
+    padding: 1em;
+    width: 200px;
+}
+
+#show:hover,
+#close:hover {
+    background: #ff8a00;
+    cursor: pointer;
+}
+
+#show {
+    position: fixed;
+    top: 30px;
+    left: 10px;
+}
+
+#close {
+    position: relative;
+}
